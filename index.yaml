@@ -3,7 +3,7 @@ entries:
   adminer:
   - apiVersion: v2
     appVersion: 4.8.1
-    created: "2022-11-15T20:33:27.219215+02:00"
+    created: "2022-11-15T21:02:14.477188+02:00"
     description: Adminer is a full-featured database management tool written in PHP.
       Conversely to phpMyAdmin, it consist of a single file ready to deploy to the
       target server. Adminer is available for MySQL, MariaDB, PostgreSQL, SQLite,
@@ -34,7 +34,7 @@ entries:
   django-app:
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2022-11-15T20:33:27.23556+02:00"
+    created: "2022-11-15T21:02:14.493463+02:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -54,7 +54,7 @@ entries:
   frontend-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-15T20:33:27.236177+02:00"
+    created: "2022-11-15T21:02:14.494022+02:00"
     description: A Helm chart for Kubernetes
     digest: 7f174fc4331e79818e515b5366821330003511117ab739fccb237d09a6e47a76
     name: frontend-app
@@ -65,7 +65,7 @@ entries:
   helm-app-full-django-frontend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-15T20:33:27.21839+02:00"
+    created: "2022-11-15T21:02:14.476287+02:00"
     dependencies:
     - name: frontend-app
       repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
@@ -73,15 +73,11 @@ entries:
     - name: django-app
       repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
       version: 0.0.2
-    - condition: adminer.enabled
-      name: adminer
-      repository: https://cetic.github.io/helm-charts
-      version: 0.1.8
     description: A Helm chart for Kubernetes
-    digest: 0377e315287d25de546af5f1f2784bf1cddf449a908d8e0d4e15a81a090e72e1
+    digest: 9d29ab6b72f5dfb59231dc0a5b5967ef9e993c348685f39382681759ee62bfd0
     name: helm-app-full-django-frontend
     type: application
     urls:
     - helm-app-full-django-frontend-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-15T20:33:27.194052+02:00"
+generated: "2022-11-15T21:02:14.440228+02:00"
