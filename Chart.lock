@@ -1,0 +1,9 @@
+dependencies:
+- name: frontend-app
+  repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
+  version: 0.1.0
+- name: django-app
+  repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
+  version: 0.0.2
+digest: sha256:3b12202fcac58f1f8d4967c76bf62e7f6c831841e89848ae1806bcab9bd9b5ff
+generated: "2022-11-15T16:44:01.780605+02:00"
