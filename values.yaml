@@ -146,13 +146,10 @@ frontend-app:
         hosts:
           - CHANGE_ME
 
-# adminer:
-#   enabled: false
-#   ingress:
-#     enabled: false
-#     hosts:
-#       - host: CHANGE_ME
-#         paths:
-#           - path: /adminer
-#           # - path: /api/?(.*)
-#             pathType: ImplementationSpecific
+adminer:
+  enabled: false
+  ingress:
+    enabled: true
+    hosts:
+      - CHANGE_ME
+    path: /adminer
