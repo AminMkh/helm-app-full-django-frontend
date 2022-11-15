@@ -145,3 +145,14 @@ frontend-app:
       - secretName: example-tls
         hosts:
           - CHANGE_ME
+
+adminer:
+  enabled: false
+  ingress:
+    enabled: false
+    hosts:
+      - host: CHANGE_ME
+        paths:
+          - path: /adminer
+          # - path: /api/?(.*)
+            pathType: ImplementationSpecific

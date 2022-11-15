@@ -31,3 +31,8 @@ dependencies:
   - name: django-app
     version: 0.0.2
     repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
+
+  - name: adminer
+    version: 0.1.8
+    repository: https://cetic.github.io/helm-charts
+    condition: adminer.enabled
