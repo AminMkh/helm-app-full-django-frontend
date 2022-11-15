@@ -3,7 +3,7 @@ entries:
   django-app:
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2022-11-15T17:00:08.895514+02:00"
+    created: "2022-11-15T18:43:12.228482+02:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -23,7 +23,7 @@ entries:
   frontend-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-15T17:00:08.897047+02:00"
+    created: "2022-11-15T18:43:12.229124+02:00"
     description: A Helm chart for Kubernetes
     digest: 7f174fc4331e79818e515b5366821330003511117ab739fccb237d09a6e47a76
     name: frontend-app
@@ -34,7 +34,7 @@ entries:
   helm-app-full-django-frontend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-15T17:00:08.878697+02:00"
+    created: "2022-11-15T18:43:12.2132+02:00"
     dependencies:
     - name: frontend-app
       repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
@@ -43,10 +43,10 @@ entries:
       repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
       version: 0.0.2
     description: A Helm chart for Kubernetes
-    digest: 029a2a0ad5018a68c031625201fe261f160ee5da31f5ce36493e6f0bacc5a461
+    digest: 6236bed35deb6a6614500f1e7c8cad186aa63b4adcaf3740e9e5ef7d73746704
     name: helm-app-full-django-frontend
     type: application
     urls:
     - helm-app-full-django-frontend-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-15T17:00:08.852859+02:00"
+generated: "2022-11-15T18:43:12.18787+02:00"
