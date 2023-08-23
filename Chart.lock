@@ -4,9 +4,9 @@ dependencies:
   version: 0.1.0
 - name: django-app
   repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
-  version: 0.0.3
+  version: 0.0.4
 - name: adminer
   repository: https://cetic.github.io/helm-charts
   version: 0.1.8
-digest: sha256:ab351b521b4a1e9ce620bf8be366be7274f52f62d0496c09abe5a7e78155e98b
-generated: "2023-08-23T13:50:02.986377+03:00"
+digest: sha256:c3c69fbbb9c06b50a5ab5b33c08bb0d4bd10c3cfa695c8372102ae4260d22aee
+generated: "2023-08-23T16:31:14.03052+03:00"
