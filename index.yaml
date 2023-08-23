@@ -3,7 +3,7 @@ entries:
   adminer:
   - apiVersion: v2
     appVersion: 4.8.1
-    created: "2023-08-23T16:21:03.534648+03:00"
+    created: "2023-08-23T16:22:47.778942+03:00"
     description: Adminer is a full-featured database management tool written in PHP.
       Conversely to phpMyAdmin, it consist of a single file ready to deploy to the
       target server. Adminer is available for MySQL, MariaDB, PostgreSQL, SQLite,
@@ -34,7 +34,7 @@ entries:
   django-app:
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2023-08-23T16:21:03.542217+03:00"
+    created: "2023-08-23T16:22:47.786957+03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -55,7 +55,7 @@ entries:
   frontend-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-23T16:21:03.542473+03:00"
+    created: "2023-08-23T16:22:47.787223+03:00"
     description: A Helm chart for Kubernetes
     digest: 7f174fc4331e79818e515b5366821330003511117ab739fccb237d09a6e47a76
     name: frontend-app
@@ -66,7 +66,7 @@ entries:
   helm-app-full-django-frontend:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-08-23T16:21:03.534145+03:00"
+    created: "2023-08-23T16:22:47.778562+03:00"
     dependencies:
     - name: frontend-app
       repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
@@ -79,10 +79,10 @@ entries:
       repository: https://cetic.github.io/helm-charts
       version: 0.1.8
     description: A Helm chart for Kubernetes
-    digest: 33fae8ab5912a213b4357cfc6ae4936f382a082697ae78378e886f7b6a6e62e6
+    digest: 7c0dfc5975a55be33041e7bcaf1c1554e1485e439b186f6cd98d7581af42f560
     name: helm-app-full-django-frontend
     type: application
     urls:
     - helm-app-full-django-frontend-0.1.1.tgz
     version: 0.1.1
-generated: "2023-08-23T16:21:03.522246+03:00"
+generated: "2023-08-23T16:22:47.765817+03:00"
