@@ -29,7 +29,7 @@ dependencies:
     repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
 
   - name: django-app
-    version: 0.0.3
+    version: 0.0.4
     repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
 
   - name: adminer
