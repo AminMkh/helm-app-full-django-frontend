@@ -1,3 +1,88 @@
 apiVersion: v1
-entries: {}
-generated: "2023-08-24T13:15:46.504214+03:00"
+entries:
+  adminer:
+  - apiVersion: v2
+    appVersion: 4.8.1
+    created: "2023-08-24T13:18:39.634946+03:00"
+    description: Adminer is a full-featured database management tool written in PHP.
+      Conversely to phpMyAdmin, it consist of a single file ready to deploy to the
+      target server. Adminer is available for MySQL, MariaDB, PostgreSQL, SQLite,
+      MS SQL, Oracle, Firebird, SimpleDB, Elasticsearch and MongoDB
+    digest: 1ed07582113c6307e96218a7d52af9241035c30af04f4fc856890654ba2dcd12
+    home: https://www.adminer.org
+    icon: https://raw.githubusercontent.com/Kong/docker-official-docs/master/adminer/logo.png
+    keywords:
+    - adminer
+    - postgres
+    - mysql
+    - sqlite
+    - elasticsearch
+    - mongodb
+    - database
+    - sql
+    maintainers:
+    - email: faiez.zalila@cetic.be
+      name: fzalila
+      url: https://github.com/fzalila
+    - email: alexandre.nuttinck@cetic.be
+      name: alexnuttinck
+      url: https://github.com/alexnuttinck
+    name: adminer
+    urls:
+    - charts/adminer-0.1.8.tgz
+    version: 0.1.8
+  django-app:
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2023-08-24T13:18:39.661051+03:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.15.6
+    description: Generic Django + Celery Helm Chart
+    digest: 60d0a5e798aeb0373ef3bf98240385024153a1ce48317b717845efff920e558b
+    icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+    name: django-app
+    type: application
+    urls:
+    - charts/django-app-0.0.5.tgz
+    version: 0.0.5
+  frontend-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-24T13:18:39.661393+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 7f174fc4331e79818e515b5366821330003511117ab739fccb237d09a6e47a76
+    name: frontend-app
+    type: application
+    urls:
+    - charts/frontend-app-0.1.0.tgz
+    version: 0.1.0
+  helm-app-full-django-frontend:
+  - apiVersion: v2
+    appVersion: 1.17.0
+    created: "2023-08-24T13:18:39.634458+03:00"
+    dependencies:
+    - name: frontend-app
+      repository: https://raw.githubusercontent.com/AminMkh/helm-frontend/main/
+      version: 0.1.0
+    - name: django-app
+      repository: https://raw.githubusercontent.com/AminMkh/helm-django/main/
+      version: 0.0.5
+    - condition: adminer.enabled
+      name: adminer
+      repository: https://cetic.github.io/helm-charts
+      version: 0.1.8
+    description: A Helm chart for Kubernetes
+    digest: ac25f27f35b6b965b393f01da7ec2e1f28b12a699501ab8b49960232fa018eba
+    name: helm-app-full-django-frontend
+    type: application
+    urls:
+    - helm-app-full-django-frontend-0.1.1.tgz
+    version: 0.1.1
+generated: "2023-08-24T13:18:39.60463+03:00"
